@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(18, 189, 232);
 }
 
 body{
@@ -57,9 +59,105 @@ body{
 .contact{
     margin-top: 2px;
     border-top: 1px solid rgb(14, 205, 239);
+    padding: 10px;
+    margin: 5px;  
+    border-bottom: 1px solid rgb(14, 205, 239);  
 }
+.label{
+    color: rgb(35 127 143);
+    font-size: 1rem;
+}
+.value{
+    color: antiquewhite;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.email, .phone{
+    margin-bottom: 15px;
+}
+
+/* Social section */
+.social{
+    padding: 10px;
+    margin: 5px;  
+    text-align: center;
+}
+.social img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(44%) saturate(1201%) hue-rotate(150deg) brightness(106%) contrast(102%);
+    transition: filter 2s ease;
+}
+.social img:hover{
+    filter: grayscale(0) invert(0);
+}
+
+/* Main Content */
 
 .main-content{
     background-color: rgb(27 28 28);
     border-radius: 10px;
+    padding: 40px;
 }
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+#navigation{
+    padding-top: 0px;
+    border-bottom: 0.2px solid rgb(8, 220, 227);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 500px;
+    font-size: 20px;
+    color: rgb(25, 88, 88);
+    transition: all;
+}
+nav a:hover , .active{
+    border: 1px solid black;
+    border-radius: 3.40282e38px;;
+    background: transparent;
+    transform: scale(1);
+    padding: 9px;
+    box-shadow: 0px 0px 20px 3px rgb(7, 124, 137);
+    transition-duration: 0.4s;
+    transition-timing-function: var(ease);
+    color: aqua;
+}
+
+/* About Me */
+
+
+#about{
+   padding-bottom: 20px; 
+}
+
+#about h2{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+.line{
+    width: 61px;
+    height: 5px;
+    margin-bottom: 15px;
+    background-color: aqua;
+}
+
+.content{
+    text-align: justify;
+    color: rgb(144, 165, 171);
+}
+
+/* Skills */
+
+#skills h2{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
