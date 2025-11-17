@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(40, 45, 49);
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}
+
+.main-container{
+    display: grid;
+    max-width: 1378px;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+    padding: 50px;
+    margin: auto;
+}
+
+.side-bar{
+    height: 90vh;
+    background-color: rgb(27 28 28);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* profile section */
+.profile{
+    padding: 20px;
+    text-align: center;
+}
+.profile img{
+    height: 100px;
+    width: 107px;
+    border-radius: 50%;
+}
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 700px;
+    margin-top: 20px;
+}
+.profile p{
+    background-color: black;
+    border-radius: 10px;
+    color: rgb(90, 239, 255);
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px rgb(4, 131, 147);
+}
+
+/* contact section */
+.contact{
+    margin-top: 2px;
+    border-top: 1px solid rgb(14, 205, 239);
+}
+
+.main-content{
+    background-color: rgb(27 28 28);
+    border-radius: 10px;
+}
