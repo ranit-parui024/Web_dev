@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    padding: 15px;
+
+}
+
+.box{
+    top: 10px;
+    left: 10px;
+    width: 400px;
+    height: 100px;
+    background-color: orange;
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate  ;
+    animation-delay: 0.8s;
+    position: absolute;
+}
+
+@keyframes moving {
+    from{
+        background-color: orange;
+        top: 10px;
+        left: 10px;
+        width: 400px;
+        height: 100px;
+    }
+
+    to{
+        background-color: rgb(45, 176, 237);
+        width: 100px;
+        height: 200px;
+        top: 10px;
+        left: 1200px;
+        border-radius: 40px;
+    }
+}
