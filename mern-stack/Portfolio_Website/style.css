@@ -116,7 +116,7 @@ nav a{
     text-decoration: none;
     font-weight: 500px;
     font-size: 20px;
-    color: rgb(25, 88, 88);
+    color: rgb(22, 117, 117);
     transition: all;
 }
 nav a:hover , .active{
@@ -132,8 +132,6 @@ nav a:hover , .active{
 }
 
 /* About Me */
-
-
 #about{
    padding-bottom: 20px; 
 }
@@ -161,3 +159,66 @@ nav a:hover , .active{
     font-size: 2rem;
 }
 
+.items img{
+    height: 100px;
+    width: 100px;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(44%) saturate(1201%) hue-rotate(150deg) brightness(106%) contrast(102%);
+    transition: filter 2s ease;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    background: transparent;
+}
+
+.items img:hover{
+    background: transparent;
+    transform: scale(1);
+    padding: 9px;
+    box-shadow: 0px 0px 20px 3px rgb(2, 61, 67);
+    transition-duration: 0.4s;
+    transition-timing-function: var(ease);
+    color: aqua;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+#skills{
+    padding-bottom: 20px
+}
+
+/* Education Section */
+
+#education{
+    margin-top: 10px;
+}
+#education h2{
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.edtech{
+    padding-left: 20px;
+}
+
+.year{
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: rgb(3, 128, 135);
+}
+
+.degree{
+    margin-bottom: 5px;
+    color: rgb(15, 227, 238);
+}
+
+.college{
+    margin-bottom: 5px;
+    color: rgb(147, 185, 187);
+}
+.learning{
+    padding-bottom: 20px;
+}
