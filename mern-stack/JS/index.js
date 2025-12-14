@@ -1,22 +1,15 @@
-// let name = "Ranit";
-// let age = 24;
-// // age = 40;
-// console.log(name , age);
+// let user1 = {
+//     name : "Ranit",
+//     accout : 17367137,
+//     age: 20,
+//     sex: 'male',
+// }       // this is object -. key-value pair
 
-// datatypes -> primitive
-// numbers
+// let s = function add() {
+//     console.log("Hello");
+// }
 
-// let a = 67;
-// let b = 6.7;
-// console.log(a+b);
+// // javascript ke andar jo function hai, usse kisi vairable ke andar store kara sakte hai hum :)
+// console.log(s);
+// s();
 
-// stirngs
-// let c = "Stike is coming";
-// let b = 'Anjali';
-
-// console.log(c, b);
- 
-// bigint -> large integer number
-let num = 5128974354168453n;
-
-console.log(num);

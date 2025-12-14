@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 50px;
+}
+
+.red{
+
+    background-color: red;
+    color: black;
+    width: 35vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.green{
+    background-color: green;
+    color: white;
+    width: 35vw;
+    font-weight: bold;
+}
