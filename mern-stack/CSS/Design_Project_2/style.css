@@ -35,7 +35,7 @@ html, body{
 }
 
 #left h1{
-    font-size: 6.5vw;
+    font-size: 8.6vw;
     font-weight: 600;
     line-height: 9vw;
 }
@@ -103,14 +103,17 @@ html, body{
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 900;
+    font-size: 2vw;
 }
 
 #bottom-left p{
-    width: 91%;
+    width: 85%;
     color: #444;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
+    /* font-size: 15px; */
+    font-size: 1.5vw;
+    /* line-height: 25px; */
+    line-height: 2.5vw;
 }
 #right{
     height: 90%;
@@ -171,11 +174,114 @@ html, body{
 
 #rotated{
     position: absolute;
-    left: 45%;
+    left: 47%;
     bottom: 26%;
     /* background-color: red; */
     rotate: 270deg;
     font-size: 36px;
+    font-size: 3vw;
     font-weight: 600;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media (max-width: 600px) {
+    #main {
+    padding: 40px;
+    padding-top: 9px;
+    height: 90%;
+    width: 100%;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+#left{
+    margin-left: 140px;
+    padding-bottom: 10px;
+    padding-top: 58px;
+    height: 100%;
+    width: 45%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: space-between; 
+}
+
+#left h1{
+    font-size: 8.6vw;
+    font-weight: 600;
+    line-height: 9vw;
+}
+
+#bottom-left{
+    margin-top: 3vw;
+    width: 100%;
+    height: 37%;
+    /* background-color: yellow; */
+    position: relative;
+}
+#color h5{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#color{
+    /* background-color: blue; */
+    width: 200px;
+    padding: 9px;
+    border: 1px solid black;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#color1{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(97, 44, 240);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#color2{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(54, 160, 214);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#color3{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(10, 12, 14);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#color4{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(238, 70, 171);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#bottom-left h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 2vw;
+}
+
+#bottom-left p{
+    width: 85%;
+    color: #444;
+    font-weight: 600;
+    /* font-size: 15px; */
+    font-size: 1.5vw;
+    /* line-height: 25px; */
+    line-height: 2.5vw;
+}
 }

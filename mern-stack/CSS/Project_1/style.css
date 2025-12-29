@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #F8F8F8;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 0.1px;
+}
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+#nav h3{
+    height: 100%;
+    width: 22%;    
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 2px solid black;
+    font-size: 16px;
+    font-weight: 600;
+}
+#nav h1{
+    height: 100%;
+    width: 22%;    
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 2px solid black;
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -4px;
+}
+#nav h3:nth-last-child(1){
+    width: 8%;
+}
+
+#center{
+    width: 96vw;
+    height: 95%;
+    /* background-color: gray; */
+    margin: 20px;
+    padding: 2vw;
+    position:relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#OVERLAY{
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    /* background-color: red; */
+    color: #fff;
+    padding: 3vw;
+}
+#over1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-size: 3vw;
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    mix-blend-mode: difference;
+}
+#over1  h3{
+    /* background-color: blue; */
+    padding: 2vw 2.5vw;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
+#over2{
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 0;
+    /* padding-bottom: 2vw; */
+}
+#over2 img{
+    height: 4vw;
+}
+#over2 h4{
+    font-size: 1.8vw; 
+    font-weight: 600;
+}
+#scroll{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#container{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: inline-block;
+    padding: 2vw;
+    margin: 1.5vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-delay: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#container img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    object-fit: cover;
+    margin: 1.3vw;
+
+}
+#container img:nth-last-child(1){
+    object-position: top;
+}
+#container img:nth-child(3){
+    object-position: top;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
