@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(6, 6, 6);  
+}
+
+/* Navigation Bar */
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: rgb(102, 138, 126); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid red;
+}
+#nav h4{
+    font-size: 17px;
+    color: white;
+}
+#nav h4:hover{
+    color: red;
+    cursor: pointer;
+}
+#nav img{
+    width: 10%;
+}
+
+#nav1{
+    width: 40%;
+    display: flex;
+    gap: 45px;
+}
+
+#nav2{
+    margin-left: 20px;
+    width: 38%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#nav2 button{
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+#nav2 button:nth-child(1){
+    background-color: rgb(229, 233, 234);
+    color: #000;
+}
+#nav2 button:nth-child(1):hover{
+    background-color: rgb(205, 5, 5);
+    color: rgb(251, 248, 248);
+    transition-duration:0.3s;
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+/* Content */
+#content{
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: rgb(172, 105, 4);*/
+    padding-top: 35px;
+}
+#content h3{
+    background-color: rgb(255, 34, 5);
+    color: white;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 6px 12px;
+    font-size: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#content h2{
+    margin-top: 10px;
+    color: white;
+    /* background-color: beige; */
+    text-align: center;
+    font-size: 65px;
+    font-weight:100;
+    padding: 0px;
+}
+#content h1{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(240, 5, 5);
+    /* background-color: beige; */
+    text-align: center;
+    font-size: 65px;
+    font-weight:100;
+    
+}
+
+
+#content button{
+    margin: 10px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: black;
+    color: rgb(250, 41, 5);
+    font-weight: 600;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#content button:hover{
+    background-color: rgb(232, 29, 6);
+    color: rgb(249, 247, 247);
+    transition-duration:0.3s;
+    cursor: pointer;
+}
+
+/* 1st page bottom cards design */
+#bottom{
+    width: 100%;
+    height: 218px;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+/* hiding scrollbar */
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+#elem{
+    flex-shrink: 0;
+    /* border: 2px solid black; */
+    background-color: blue;
+    height: 100%;
+    width: 150px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+#elem img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}

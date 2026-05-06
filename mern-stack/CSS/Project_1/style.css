@@ -123,6 +123,7 @@ html, body{
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
+    scrollbar-width: none;
 }
 #container{
     height: 40vh;
@@ -160,4 +161,84 @@ html, body{
     to{
         transform: translateX(-100%);
     }
+}
+
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    /* background-color: blue  ;     */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    letter-spacing: 4px;
+    margin-right: 1.8vw;
+}
+#alphabet h6{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    /* background-color: yellow; */
+    padding: 0.5vw 0.8vw;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all ease 1ms;
+}
+#alphabet h6:hover{
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vw 5vw;
+    
+    /* background-color: red; */
+}
+#page2-part1{
+    height: 100%;
+    width: 40%;
+    background-image: url(https://i.pinimg.com/736x/dd/11/1c/dd111c8bd46ebd0d23207dce9e6f5c8a.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+#page2-part1 h2{
+    position: absolute;
+    bottom: -3.8vw;
+    font-size: 2.5vw;
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+#page2-part2{ 
+    height: 100%;
+    width: 40%;
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+}
+#part2-text{
+    padding: 2vw;
+    display: flex;
+    gap: 2vw;
+}
+#part1{
+    font-size: 2vw;
+    font-weight: 600;
 }
